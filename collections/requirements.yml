@@ -13,6 +13,4 @@ collections:
 
   - name: splunk.es
 
-  - name: redhat.rhv
-
   - name: community.postgresql
