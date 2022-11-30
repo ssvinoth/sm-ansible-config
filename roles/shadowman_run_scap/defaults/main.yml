@@ -4,3 +4,5 @@ email_from: tower@shadowman.dev
 to_emails: alex@shadowman.dev,tower@shadowman.dev
 email_to: "{{ to_emails.split(',') }}"
 sendemailreport: true
+# Options : cis - cis server level 2 , cis_server_l1 , 
+content_profile: "cis"
