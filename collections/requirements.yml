@@ -1,5 +1,5 @@
 collections:
-  - name: redhat.insights
+  - name: redhatinsights.insights
 
   - name: chocolatey.chocolatey
 
