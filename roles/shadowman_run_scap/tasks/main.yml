@@ -93,7 +93,7 @@
     owner: awx
     group: awx
     mode: '0644'
-  delegate_to: report.shadowman.dev
+  delegate_to: report_server
   run_once: true
 
 - name: DISPLAY LINK TO SUMMARY REPORT
