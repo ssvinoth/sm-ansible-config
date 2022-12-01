@@ -7,12 +7,12 @@
   roles:
     - role: rhel8-cis
       vars:
-        rhel8cis_section1: "{{ enable_rhel8cis_section1 | default(true) | bool }}"
-        rhel8cis_section2: "{{ enable_rhel8cis_section2 | default(true) | bool }}"
-        rhel8cis_section3: "{{ enable_rhel8cis_section3 | default(true) | bool }}"
-        rhel8cis_section4: "{{ enable_rhel8cis_section4 | default(true) | bool }}"
-        rhel8cis_section5: "{{ enable_rhel8cis_section5 | default(true) | bool }}"
-        rhel8cis_section6: "{{ enable_rhel8cis_section6 | default(true) | bool }}"
+        rhel8cis_section1: "{{ enable_rhel8cis_section1 | default(false) | bool }}"
+        rhel8cis_section2: "{{ enable_rhel8cis_section2 | default(false) | bool }}"
+        rhel8cis_section3: "{{ enable_rhel8cis_section3 | default(false) | bool }}"
+        rhel8cis_section4: "{{ enable_rhel8cis_section4 | default(false) | bool }}"
+        rhel8cis_section5: "{{ enable_rhel8cis_section5 | default(false) | bool }}"
+        rhel8cis_section6: "{{ enable_rhel8cis_section6 | default(false) | bool }}"
         rhel8cis_rule_1_1_1_1: false
         rhel8cis_rule_1_1_1_2: false
         rhel8cis_rule_1_1_1_3: false
