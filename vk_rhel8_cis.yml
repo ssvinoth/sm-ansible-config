@@ -1,0 +1,20 @@
+---
+- name: RHEL8 CIS Remediation
+  hosts: "{{ CIS_SERVERS }}"
+  become: true
+  vars:
+      is_container: false
+  roles:
+    - role: rhel8_cis
+      vars:
+        rhel8cis_section1: "{{ enable_rhel8cis_section1 | default(false) | bool }}"
+        rhel8cis_section2: "{{ enable_rhel8cis_section2 | default(false) | bool }}"
+        rhel8cis_section3: "{{ enable_rhel8cis_section3 | default(false) | bool }}"
+        rhel8cis_section4: "{{ enable_rhel8cis_section4 | default(false) | bool }}"
+        rhel8cis_section5: "{{ enable_rhel8cis_section5 | default(false) | bool }}"
+        rhel8cis_section6: "{{ enable_rhel8cis_section6 | default(false) | bool }}"
+
+
+
+
+
