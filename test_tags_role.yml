@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: all
   # tasks:
   #   - name: include test_tags role with specific tags
   #     ansible.builtin.include_role:
