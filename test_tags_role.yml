@@ -1,0 +1,10 @@
+- hosts: localhost
+  # tasks:
+  #   - name: include test_tags role with specific tags
+  #     ansible.builtin.include_role:
+  #       name: test_tags
+  #     tags:
+  #       - tag2
+  roles:
+    - role: test_tags
+      

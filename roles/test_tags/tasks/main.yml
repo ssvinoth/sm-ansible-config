@@ -1,0 +1,16 @@
+---
+# tasks file for test_tags
+- debug:
+    msg: "task - tag1 set"
+  tags: tag1
+
+- debug:
+    msg: "task - tag2 set"
+  tags: tag2
+
+- debug:
+    msg: "task - always set"
+  tags: always
+
+- debug:
+    msg: "task - NO TAG"
