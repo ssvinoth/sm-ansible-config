@@ -1,6 +1,6 @@
 ---
 - name: Perform Compliance Scans
-  hosts: all
+  hosts: "{{ COMPLIANCE_SERVERS }}"
   strategy: free
 
   tasks:

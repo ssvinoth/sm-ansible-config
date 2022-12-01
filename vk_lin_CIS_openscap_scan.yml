@@ -1,6 +1,6 @@
 ---
 - name: Build openscap report
-  hosts: cis_servers
+  hosts: "{{ COMPLIANCE_SERVERS }}"
 
   roles:
     - shadowman_run_scap
