@@ -5,7 +5,7 @@
   vars:
       is_container: false
   roles:
-    - role: rhel8_cis
+    - role: rhel8-cis
       vars:
         rhel8cis_section1: "{{ enable_rhel8cis_section1 | default(false) | bool }}"
         rhel8cis_section2: "{{ enable_rhel8cis_section2 | default(false) | bool }}"
