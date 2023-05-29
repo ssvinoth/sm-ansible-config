@@ -2,8 +2,9 @@
 - name: Build openscap report
   hosts: "{{ COMPLIANCE_SERVERS }}"
 
-  roles:
-    - vk_shadowman_run_scap
+  tasks:
+    - ansible.builtin.include_role:
+        name: vk_shadowman_run_scap
       vars:
         file_path: "/opt/ansible/reports/gps/cis/v3/openscap"
         report_svr_path: "gps/cis/v3/openscap"
