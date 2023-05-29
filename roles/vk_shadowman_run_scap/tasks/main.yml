@@ -27,7 +27,7 @@
 
 - name: Set Report filename
   ansible.builtin.set_fact:
-    report_file_name: '{{ inventory_hostname }}_{{datetime}}.html'
+    report_file_name: '{{ inventory_hostname }}_oscap_{{datetime}}.html'
 
 - name: Copy files to EE
   ansible.builtin.fetch:
