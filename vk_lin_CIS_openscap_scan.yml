@@ -3,7 +3,7 @@
   hosts: "{{ COMPLIANCE_SERVERS }}"
 
   roles:
-    - shadowman_run_scap
+    - vk_shadowman_run_scap
       vars:
         file_path: "/opt/ansible/reports/gps/cis/v3/openscap"
         report_svr_path: "gps/cis/v3/openscap"
