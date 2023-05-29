@@ -1,6 +1,6 @@
 ---
 - name: Build openscap report
-  hosts: "{{ COMPLIANCE_SERVERS }}"
+  hosts: "{{ NODES }}"
 
   tasks:
     - ansible.builtin.include_role:
