@@ -35,7 +35,7 @@
 
 - name: DISPLAY LINK TO REPORT
   ansible.builtin.debug:
-    msg: "http://{{ report_server_port }}/openscap/{{ inventory_hostname }}/"
+    msg: "http://{{ report_server_port }}/{{ report_svr_path }}/{{ inventory_hostname }}/"
 
 - name: Get results
   ansible.builtin.slurp:
